@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cream"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="50dp">
+
+
+    <!-- Top App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <!-- Round Profile Image -->
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="74dp"
+            android:layout_height="55dp"
+            android:contentDescription="Profile Image"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_profile" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="270dp"
+            android:layout_height="58dp"
+            android:layout_weight="1"
+            android:paddingStart="18dp"
+            android:text="Notes"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <!-- Search Button -->
+
+        <!-- More Options -->
+        <ImageButton
+            android:layout_width="61dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="fitCenter"
+            android:contentDescription="searchIcon"
+            android:src="@drawable/search" />
+
+
+        <ImageButton
+            android:layout_width="34dp"
+            android:layout_height="32dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:src="@drawable/more"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000" />
+
+
+
+    <!-- Notes List -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="-6dp"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp">
+
+            <!-- Note Item - Repeat as needed -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/note_color"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Note Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#CCCCCC"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:background="#CCCCCC" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/note_color"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Note Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#CCCCCC"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:background="#CCCCCC" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/note_color"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Note Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#CCCCCC"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:background="#CCCCCC" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/note_color"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Note Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#CCCCCC"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:background="#CCCCCC" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/note_color"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Note Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#CCCCCC"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:background="#CCCCCC" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_background"
+                android:backgroundTint="@color/note_color"
+                android:padding="20dp"
+                android:layout_marginBottom="12dp">
+
+                <!-- Note Text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Title"
+                        android:textStyle="bold"
+                        android:textSize="24sp"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+
+                    <TextView
+                        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"/>
+                </LinearLayout>
+
+                <!-- Action Buttons -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="32dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="#CCCCCC"
+                        android:padding="4dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/edit" />
+
+                    <ImageButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/delete"
+                        android:scaleType="fitCenter"
+                        android:padding="4dp"
+                        android:background="#CCCCCC" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Action Button -->
+        <ImageButton
+            android:id="@+id/imagebutton"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:backgroundTint="#000"
+            android:scaleType="fitCenter"
+            android:padding="3dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/create"
+            app:tint="#000" />
+
+</LinearLayout>

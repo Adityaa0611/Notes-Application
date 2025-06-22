@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/cardview_light_background"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="80dp"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSignUpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="@android:color/black"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your account"
+            android:textSize="14sp"
+            android:textColor="@color/darkGrey"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/input_rounded"
+            android:layout_marginBottom="16dp"
+            android:inputType="text" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/input_rounded"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/input_rounded"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPassword" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:textColorHint="@color/lightGrey"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:drawablePadding="12dp"
+            android:background="@drawable/input_rounded"
+            android:layout_marginBottom="24dp"
+            android:inputType="textPassword" />
+
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@drawable/button_primary"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- OR -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or"
+            android:textColor="@color/darkGrey"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sign In with Google -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signupwithgoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In with Google"
+            android:textColor="#6750a4"
+            app:backgroundTint="@android:color/white"
+            app:strokeWidth="2dp"
+            app:strokeColor="@color/purple"
+            android:textSize="18dp"
+            app:cornerRadius="24dp"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp" />
+
+
+
+        <!-- Already have an account -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:text="Already have an account?"
+                android:textSize="14sp"
+                android:textColor="@color/darkGrey"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:text="  Login"
+                android:textColor="#9C27B0"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
